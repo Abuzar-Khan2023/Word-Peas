@@ -87,7 +87,9 @@ button:hover {
 
 .btns {
     display: flex;
-    margin: 45px auto;
+    justify-content: right;
+    align-items: center;
+    margin: 20px 50px 0 0;
 }
 
 .btn1, .btn2, .btn3 {
@@ -136,11 +138,18 @@ button:hover {
 }
 
 .box {
+    box-shadow: 2px 4px 4px 2px rgba(0,0,0,0.2);
+    transition: 0.3s;
     border-radius: 10px;
+    /* transform: perspective(1000px) rotateX(45deg); */
 }
 
+.box:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,1);
+    /* transform: perspective(1000px) rotateX(0deg); */
+  }
+
 .product {
-    background-image: url('/Projects/Creative/img/Tomato.jpg');
     background-size: cover;
     background-position: center;
     border-top-left-radius: 10px;
@@ -270,9 +279,20 @@ footer {
 .foot-pannel2 {
     background-color: #355619;
     color: #000000;
-    height: 300px;
+    height: 250px;
     display: flex;
     justify-content: space-evenly;
+}
+
+.foot-pannel2 p {
+    text-decoration: underline;
+    color: #000000;
+    font-size: 1.2rem;
+    font-weight: 550;
+}
+
+.foot-pannel2 p:hover {
+    text-decoration: none;
 }
 
 ul {
